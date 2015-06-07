@@ -1,4 +1,10 @@
 <h1>Contact My Legislator</h1>
+<h2>State Representative</h2>
 <p>My legislator is: <%= @legislator.first["full_name"] %></p>
-<p>E-Mail him at: <%= @legislator.first["email"] %></p>
-<p>Test: <%= @test %>
+<p>E-Mail Address: <%= @legislator.first["email"] %></p>
+<p>Call: <%= @legislator.first["office_phone"] %></p>
+
+<h2>State Senator</h2>
+<p>My state senator is: <%= @legislator[1]["full_name"] %></p>
+<p>E-Mail Address: <%= @legislator[1]["email"] %></p>
+<p>Call: <%= @legislator[1]["office_phone"] %></p>
