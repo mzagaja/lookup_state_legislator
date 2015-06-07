@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'static_pages/lookup'
+
+  get 'static_pages/help'
+
+  root 'static_pages#lookup'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
